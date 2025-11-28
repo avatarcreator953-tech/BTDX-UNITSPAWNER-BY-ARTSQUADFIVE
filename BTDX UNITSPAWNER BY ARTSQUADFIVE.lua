@@ -12,7 +12,7 @@ local function scanAvailableUnits()
     local units = {}
     local replicatedStorage = game:GetService("ReplicatedStorage")
     
-    local towersFolder = replicatedStorage:FindFirstChild("Units")
+    local towersFolder = replicatedStorage:FindFirstChild("Towers")
     if not towersFolder then return units end
     
     for _, towerModel in pairs(towersFolder:GetChildren()) do
@@ -282,3 +282,4 @@ coroutine.wrap(function()
     end
 
 end)()
+
